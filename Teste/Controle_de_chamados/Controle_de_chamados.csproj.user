@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="Formularios\Usuario\Cadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Formularios\ControleDeUsuario\menuSuporte.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Formularios\ControleDeUsuario\MenuUsuario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Formularios\ControleDeUsuario\NovosChamados.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Formularios\Usuario\TelaLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Formularios\Usuario\TelaUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

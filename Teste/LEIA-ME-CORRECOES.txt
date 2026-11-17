@@ -1,0 +1,36 @@
+CONTROLE DE CHAMADOS - CORRECOES
+
+1. Formularios/ControleDeUsuario/menuSuporte.cs
+   Namespace do UserControl MenuSuporte alterado para
+   Controle_de_chamados.Formularios.ControleDeUsuario.
+
+2. Formularios/ControleDeUsuario/MenuSuporte.Designer.cs
+   Mesmo namespace do UserControl, evitando que seja mesclado
+   com o Form MenuSuporte da pasta Suporte.
+
+3. Formularios/Suporte/MenuSuporte.Designer.cs
+   Removida importacao indevida de System.Windows.Controls (WPF).
+   O layout e seus componentes Windows Forms foram preservados.
+
+4. Formularios/TelaLogin.cs
+   Referencia a classe inexistente TelaUsuario trocada por MenuUsuario,
+   a classe real do formulario em Formularios/Usuario/TelaUsuario.cs.
+
+VERIFICACOES EFETUADAS
+- Cada classe parcial de formulario/controle possui seu par .cs/.Designer.cs.
+- Nao foram encontrados eventos registrados no Designer sem metodo correspondente.
+- Nao foram encontradas declaracoes repetidas de campos dentro dos Designers.
+- Os arquivos .resx e o pacote FontAwesome.Sharp foram preservados.
+
+LIMITACAO
+- Nao foi possivel compilar ou abrir o Designer neste ambiente sem .NET SDK Windows.
+- A autenticacao e a persistencia de dados ainda nao estao implementadas no projeto original.
+  O botao 'Entrar' nao possui tratamento de click; o botao 'button1' abre
+  o Form MenuUsuario, como ja era a intencao do codigo anterior.
+
+PARA TESTAR
+1. Extraia o ZIP.
+2. Abra Controle_de_chamados.sln no Visual Studio Windows.
+3. Restaure os pacotes NuGet.
+4. Compilar > Recompilar Solucao.
+5. Se encontrar erro adicional, envie a lista de erros com codigo e arquivo.
